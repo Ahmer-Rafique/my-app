@@ -39,7 +39,7 @@ function MobileNavb() {
   return (
     <div className='flex flex-col w-full'>
       {navItemArray.map((item: navItemsType, index: number) => (
-        <Link href={item.href} className="w-full rounded-md hover:text-gray-900 hover:bg-gray-400 hover:bg-gray-300 cursor-pointer py-4 px-6 font-bold ">{item.label}</Link>
+        <Link key={index} href={item.href} className="w-full rounded-md hover:text-gray-900 hover:bg-gray-400 hover:bg-gray-300 cursor-pointer py-4 px-6 font-bold ">{item.label}</Link>
       ))}
     </div>
   )
